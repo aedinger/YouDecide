@@ -1,0 +1,77 @@
+body{
+  background-color: black;
+  width:100%;
+  height:100%;
+}
+
+.person{
+  left:1vw;
+  display:  flex;
+  position: relative;
+  height:30vw;
+  width: inherit;
+  background-repeat: no-repeat;
+  background-color: black;
+  transition: all 2s ease-in-out;
+
+  background-size: auto;
+}
+
+.clue1{
+  width:30vw;
+  height:3vw;
+  background-color: white;
+  top:1vw;
+  left:35vw;
+  position: relative;
+  display: flex;
+  opacity: 0;
+}
+.clue2{
+  width:30vw;
+  height:3vw;
+  background-color: white;
+  top:2vw;
+  left:35vw;
+  position: relative;
+  display: flex;
+  opacity: 0;
+}
+.clue3{
+  width:30vw;
+  height:3vw;
+  background-color: white;
+  top:3vw;
+  left:35vw;
+  position: relative;
+  display: flex;
+  opacity: 0;
+}
+.clue4{
+  width:30vw;
+  height:3vw;
+  background-color: white;
+  top:4vw;
+  left:35vw;
+  position: relative;
+  display: flex;
+  opacity: 0;
+}
+.yes{
+width:0vw;
+height:0vw;
+background-color: green;
+display: flex;
+position: relative;
+left:35vw;
+top:0vw;
+}
+.no{
+  width:0vw;
+  height:0vw;
+  background-color: red;
+  display: flex;
+  position: relative;
+  left:35vw;
+  top:10vw;
+}

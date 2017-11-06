@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>You Decide</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <style>
+  @media only screen and (max-width: 1000px){
+  body {
+          background-color: black;
+      }
+
+      .yes{
+      width:50vw;
+      height:50vw;
+      background-color: green;
+      display: flex;
+      position: relative;
+      left:25vw;
+      top:15vw;
+      justify-content: center;
+      transition: all 0.5s ease-in-out;
+      }
+      .thanks{
+      width:50vw;
+      height:20vw;
+      font-size: 10vw;
+      display: flex;
+      position: absolute;
+      color:white;
+      left:30vw;
+      top:60vw;
+      opacity: 0;
+      justify-content: center;
+      transition: all 2s ease-in-out;
+      }
+
+      .counter{
+      width:50vw;
+      height:20vw;
+      font-size: 10vw;
+      display: flex;
+      position: absolute;
+      color:white;
+      left:30vw;
+      top:60vw;
+      opacity: 0;
+      justify-content: center;
+      transition: all 2s ease-in-out;
+      }
+
+      .no{
+        width:50vw;
+        height:50vw;
+        background-color: red;
+        display: flex;
+        position: relative;
+        left:25vw;
+        top:50vw;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+      }
+      .person{
+        width:0vw;
+        height:0vw;
+        top:5vw;
+        left:40vw;
+        display: flex;
+        position: relative;
+        background-color: white;
+      }
+
+      .clue1{
+        width:0vw;
+        height:0vw;
+        background-color: white;
+        top:7vw;
+        left:35vw;
+        position: relative;
+        display: flex;
+        transition: all 1s ease-in-out;
+        opacity: 0;
+      }
+      .clue2{
+        width:0vw;
+        height:0vw;
+        background-color: white;
+        top:8vw;
+        left:35vw;
+        position: relative;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+      }
+      .clue3{
+        width:0vw;
+        height:0vw;
+        background-color: white;
+        top:9vw;
+        left:35vw;
+        position: relative;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+      }
+      .clue4{
+        width:0vw;
+        height:0vw;
+        background-color: white;
+        top:10vw;
+        left:35vw;
+        position: relative;
+        display: flex;
+        transition: all 0.5s ease-in-out;
+      }
+  }
+  </style>
+  <body>
+
+    <div class="person"><span id="time"></span></div>
+    <div class="clue1"></div>
+    <div class="clue2"></div>
+    <div class="clue3"></div>
+    <div class="clue4"></div>
+    <div class="yes"></div>
+    <div class="no"></div>
+    <div class="thanks">Thank you for voting</div>
+    <div class="counter"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="frontend.js" charset="utf-8"></script>
+  </body>
+</html>
